@@ -1,6 +1,6 @@
 s3eAndroidAppirater
 (An app rater android extension to drive your apps rating by reminding users to rate your app)
-(android is supported, iOS support will be added soon)
+(android is supported, iOS version is available in the link  below)
 
 -----------------------------------------------------------
 How to :
