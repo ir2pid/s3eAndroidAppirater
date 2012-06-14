@@ -15,6 +15,7 @@
 
 static jobject g_Obj;
 static jmethodID g_AppiraterInit;
+static jmethodID g_AppiraterEventOccured;
 
 s3eResult s3eAndroidAppiraterInit_platform()
 {
@@ -39,8 +40,12 @@ s3eResult s3eAndroidAppiraterInit_platform()
         goto fail;
 
     // Get all the extension methods
-    g_AppiraterInit = env->GetMethodID(cls, "AppiraterInit", "(Ljava/lang/String;Ljava/lang/String;II)I");
+    g_AppiraterInit = env->GetMethodID(cls, "AppiraterInit", "(Ljava/lang/String;Ljava/lang/String;III)I");
     if (!g_AppiraterInit)
+        goto fail;
+
+    g_AppiraterEventOccured = env->GetMethodID(cls, "AppiraterEventOccured", "()I");
+    if (!g_AppiraterEventOccured)
         goto fail;
 
 
@@ -70,10 +75,16 @@ void s3eAndroidAppiraterTerminate_platform()
     // Add any platform-specific termination code here
 }
 
-s3eResult AppiraterInit_platform(const char* cTitle, const char* cMsg, int iDays, int iLaunches)
+s3eResult AppiraterInit_platform(const char* cTitle, const char* cAppName, int iDays, int iLaunches, int iEvents)
 {
     JNIEnv* env = s3eEdkJNIGetEnv();
     jstring cTitle_jstr = env->NewStringUTF(cTitle);
-    jstring cMsg_jstr = env->NewStringUTF(cMsg);
-    return (s3eResult)env->CallIntMethod(g_Obj, g_AppiraterInit, cTitle_jstr, cMsg_jstr, iDays, iLaunches);
+    jstring cAppName_jstr = env->NewStringUTF(cAppName);
+    return (s3eResult)env->CallIntMethod(g_Obj, g_AppiraterInit, cTitle_jstr, cAppName_jstr, iDays, iLaunches, iEvents);
+}
+
+s3eResult AppiraterEventOccured_platform()
+{
+    JNIEnv* env = s3eEdkJNIGetEnv();
+    return (s3eResult)env->CallIntMethod(g_Obj, g_AppiraterEventOccured);
 }

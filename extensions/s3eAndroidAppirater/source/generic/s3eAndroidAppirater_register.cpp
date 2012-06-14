@@ -24,26 +24,34 @@ extern void s3eAndroidAppiraterTerminate();
 // code is oftern build standalone, outside the main loader build.
 #if defined I3D_OS_IPHONE || defined I3D_OS_OSX || defined I3D_OS_LINUX || defined I3D_OS_WINDOWS
 
-static s3eResult AppiraterInit_wrap(const char* cTitle, const char* cMsg, int iDays, int iLaunches)
+static s3eResult AppiraterInit_wrap(const char* cTitle, const char* cAppName, int iDays, int iLaunches, int iEvents)
 {
     IwTrace(ANDROIDAPPIRATER_VERBOSE, ("calling s3eAndroidAppirater func on main thread: AppiraterInit"));
-    return (s3eResult)(intptr_t)s3eEdkThreadRunOnOS((s3eEdkThreadFunc)AppiraterInit, 4, cTitle, cMsg, iDays, iLaunches);
+    return (s3eResult)(intptr_t)s3eEdkThreadRunOnOS((s3eEdkThreadFunc)AppiraterInit, 5, cTitle, cAppName, iDays, iLaunches, iEvents);
+}
+
+static s3eResult AppiraterEventOccured_wrap()
+{
+    IwTrace(ANDROIDAPPIRATER_VERBOSE, ("calling s3eAndroidAppirater func on main thread: AppiraterEventOccured"));
+    return (s3eResult)(intptr_t)s3eEdkThreadRunOnOS((s3eEdkThreadFunc)AppiraterEventOccured, 0);
 }
 
 #define AppiraterInit AppiraterInit_wrap
+#define AppiraterEventOccured AppiraterEventOccured_wrap
 
 #endif
 
 void s3eAndroidAppiraterRegisterExt()
 {
     /* fill in the function pointer struct for this extension */
-    void* funcPtrs[1];
+    void* funcPtrs[2];
     funcPtrs[0] = (void*)AppiraterInit;
+    funcPtrs[1] = (void*)AppiraterEventOccured;
 
     /*
      * Flags that specify the extension's use of locking and stackswitching
      */
-    int flags[1] = { 0 };
+    int flags[2] = { 0 };
 
     /*
      * Register the extension

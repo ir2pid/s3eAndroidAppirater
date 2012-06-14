@@ -13,11 +13,11 @@ from os.path import join
 
 SetOption("implicit_cache" ,1)
 
-target_name = 'g:/hungryhobo_source/edk/s3eandroidappirater/lib/android/libs3eAndroidAppirater.so'
-target_name_debug = 'g:/hungryhobo_source/edk/s3eandroidappirater/lib/android/libs3eAndroidAppirater_d.so'
-target_name_rvct = 'g:/hungryhobo_source/edk/s3eandroidappirater/lib/android/libs3eAndroidAppirater.so'
-target_name_debug_rvct = 'g:/hungryhobo_source/edk/s3eandroidappirater/lib/android/libs3eAndroidAppirater_d.so'
-sdk_root = 'd:/marmalade/5.2'
+target_name = 'c:/marmalade/6.0/extensions/s3eandroidappirater/lib/android/libs3eAndroidAppirater.so'
+target_name_debug = 'c:/marmalade/6.0/extensions/s3eandroidappirater/lib/android/libs3eAndroidAppirater_d.so'
+target_name_rvct = 'c:/marmalade/6.0/extensions/s3eandroidappirater/lib/android/libs3eAndroidAppirater.so'
+target_name_debug_rvct = 'c:/marmalade/6.0/extensions/s3eandroidappirater/lib/android/libs3eAndroidAppirater_d.so'
+sdk_root = 'c:/marmalade/6.0'
 
 scons_version = SCons.__version__.split(".")[:2]
 scons_version = [int(x) for x in scons_version]
@@ -46,14 +46,14 @@ def SplitN(str):
 includes = SplitN(r'''
 ../source/h
 ../h
-d:/marmalade/5.2/s3e/edk/h
-d:/marmalade/5.2/s3e/h
-d:/marmalade/5.2/s3e/h/ext
-d:/marmalade/5.2/modules/iwutil/h
-d:/marmalade/5.2/modules/iwcore/h
-C:/android-ndk-r8/sources/cxx-stl/gnu-libstdc++/include
-C:/android-ndk-r8/sources/cxx-stl/gnu-libstdc++/libs/armeabi/include
-C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include
+../../../s3e/edk/h
+../../../s3e/h
+../../../s3e/h/ext
+../../../modules/iwutil/h
+../../../modules/iwcore/h
+../../../../../android-ndk-r7c/sources/cxx-stl/gnu-libstdc++/include
+../../../../../android-ndk-r7c/sources/cxx-stl/gnu-libstdc++/libs/armeabi/include
+../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include
 ''')
 
 libraries = SplitN(r'''
@@ -101,9 +101,9 @@ extra_objects = SplitN(r'''
 ''')
 
 libpath = SplitN(r'''
-d:/marmalade/5.2/s3e/edk/lib/android
-C:/android-ndk-r8/sources/cxx-stl/gnu-libstdc++/libs/armeabi
-C:/android-ndk-r8/platforms/android-9/arch-arm/usr/lib
+c:/marmalade/6.0/s3e/edk/lib/android
+C:/android-ndk-r7c/sources/cxx-stl/gnu-libstdc++/libs/armeabi
+C:/android-ndk-r7c/platforms/android-9/arch-arm/usr/lib
 ''')
 
 Extensions_sources = SplitN(r'''
@@ -192,7 +192,7 @@ else:
 
 
 paths = [
-    r'C:\android-ndk-r8\toolchains\arm-linux-androideabi-4.4.3\prebuilt\windows\bin',
+    r'C:\android-ndk-r7c\toolchains\arm-linux-androideabi-4.4.3\prebuilt\windows\bin',
 ]
 
 path = []
@@ -268,11 +268,11 @@ else:
     env.Append(LINKFLAGS=['-nostdlib', '-Wl,-Bsymbolic', '-Wl,--no-undefined', '-pthread', '-Wl,--gc-sections', '-Wl,--as-needed', '-mthumb-interwork'])
     if env['debug']:
         env.Append(CCFLAGS=['-g', '-O0', '-include', 'temp_defines_debug.h'])
-        env.Append(LINKFLAGS=['-Wl,-Map="g:/hungryhobo_source/edk/s3eandroidappirater/lib/android/libs3eAndroidAppirater_d.map"'])
+        env.Append(LINKFLAGS=['-Wl,-Map="c:/marmalade/6.0/extensions/s3eandroidappirater/lib/android/libs3eAndroidAppirater_d.map"'])
         env.Append(PLFLAGS=[])
     else:
         env.Append(CCFLAGS=['-O3', '-include', 'temp_defines_release.h'])
-        env.Append(LINKFLAGS=['-Wl,-Map="g:/hungryhobo_source/edk/s3eandroidappirater/lib/android/libs3eAndroidAppirater.map"'])
+        env.Append(LINKFLAGS=['-Wl,-Map="c:/marmalade/6.0/extensions/s3eandroidappirater/lib/android/libs3eAndroidAppirater.map"'])
     env.Append(CCFLAGS=['-fsigned-char', '-fno-strict-aliasing', '-fvisibility=hidden', '-fno-short-enums', '-Wall', '-fomit-frame-pointer', '-fmessage-length=0', '-Wno-unused', '-Wno-parentheses', '-save-temps', '-ffunction-sections', '-mstructure-size-boundary=8', '-mfloat-abi=soft', '-mthumb-interwork', '-march=armv4t'])
     env.Append(CFLAGS=['-std=gnu99'])
     env.Append(CXXFLAGS=['-fno-exceptions'])

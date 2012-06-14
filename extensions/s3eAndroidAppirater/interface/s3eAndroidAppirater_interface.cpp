@@ -11,7 +11,8 @@
 /**
  * Definitions for functions types passed to/from s3eExt interface
  */
-typedef  s3eResult(*AppiraterInit_t)(const char* cTitle, const char* cMsg, int iDays, int iLaunches);
+typedef  s3eResult(*AppiraterInit_t)(const char* cTitle, const char* cAppName, int iDays, int iLaunches, int iEvents);
+typedef  s3eResult(*AppiraterEventOccured_t)();
 
 /**
  * struct that gets filled in by s3eAndroidAppiraterRegister
@@ -19,6 +20,7 @@ typedef  s3eResult(*AppiraterInit_t)(const char* cTitle, const char* cMsg, int i
 typedef struct s3eAndroidAppiraterFuncs
 {
     AppiraterInit_t m_AppiraterInit;
+    AppiraterEventOccured_t m_AppiraterEventOccured;
 } s3eAndroidAppiraterFuncs;
 
 static s3eAndroidAppiraterFuncs g_Ext;
@@ -63,12 +65,22 @@ s3eBool s3eAndroidAppiraterAvailable()
     return g_GotExt ? S3E_TRUE : S3E_FALSE;
 }
 
-s3eResult AppiraterInit(const char* cTitle, const char* cMsg, int iDays, int iLaunches)
+s3eResult AppiraterInit(const char* cTitle, const char* cAppName, int iDays, int iLaunches, int iEvents)
 {
     IwTrace(ANDROIDAPPIRATER_VERBOSE, ("calling s3eAndroidAppirater[0] func: AppiraterInit"));
 
     if (!_extLoad())
         return S3E_RESULT_ERROR;
 
-    return g_Ext.m_AppiraterInit(cTitle, cMsg, iDays, iLaunches);
+    return g_Ext.m_AppiraterInit(cTitle, cAppName, iDays, iLaunches, iEvents);
+}
+
+s3eResult AppiraterEventOccured()
+{
+    IwTrace(ANDROIDAPPIRATER_VERBOSE, ("calling s3eAndroidAppirater[1] func: AppiraterEventOccured"));
+
+    if (!_extLoad())
+        return S3E_RESULT_ERROR;
+
+    return g_Ext.m_AppiraterEventOccured();
 }

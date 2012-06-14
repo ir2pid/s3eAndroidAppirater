@@ -30,14 +30,17 @@ class s3eAndroidAppirater
     private String sTitle;
 	private static int iDays_till_prompt = 5;
     private static int iLaunches_till_prompt = 5;
+    private static int iEvents_till_prompt = 21;
 	private Context mContext;
 	
-    public int AppiraterInit(String cTitle, String cMsg, int iDays, int iLaunches)
+    public int AppiraterInit(String cTitle, String cAppName, int iDays, int iLaunches, int iEvents)
     {
-		sAppName = cMsg;
+        
+		sAppName = cAppName;
         sTitle = cTitle;
 		iDays_till_prompt = iDays;
 		iLaunches_till_prompt = iLaunches;
+		iEvents_till_prompt = iEvents;
         //We are currently in the Application thread,
         //enqueue the call to showMessage on the UI thread
         LoaderActivity.m_Activity.runOnUiThread(m_ShowMessage);
@@ -72,11 +75,43 @@ class s3eAndroidAppirater
 					showMessage(editor);
 				}
 			}
-			showMessage(editor);
+
 			editor.commit();
 			
         }
     };
+
+    public int AppiraterEventOccured()
+    {
+		LoaderActivity.m_Activity.runOnUiThread(m_EventOccured);
+        return 0;
+    }
+
+	private final Runnable m_EventOccured = new Runnable()
+    {
+        public void run()
+        {
+			mContext = LoaderAPI.getActivity();
+			SharedPreferences prefs = mContext.getSharedPreferences("apprater", 0);
+			if (prefs.getBoolean("dontshowagain", false)) { return ; }
+			
+			SharedPreferences.Editor editor = prefs.edit();
+			
+			// Increment event counter
+			long event_count = prefs.getLong("event_count", 0) + 1;
+			editor.putLong("event_count", event_count);
+
+			
+			// Wait at least n events before opening
+			if (event_count >= iEvents_till_prompt) {
+				showMessage(editor);
+			}
+
+			editor.commit();
+			
+        }
+    };
+
 
     private void showMessage(final SharedPreferences.Editor editor)
     {
@@ -106,6 +141,7 @@ class s3eAndroidAppirater
         b2.setText("Remind me later");
         b2.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
+				editor.putLong("event_count", 0);
                 dialog.dismiss();
             }
         });

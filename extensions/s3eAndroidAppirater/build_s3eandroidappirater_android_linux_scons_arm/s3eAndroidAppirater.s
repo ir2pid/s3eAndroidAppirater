@@ -24,7 +24,7 @@
 	.type	_Z23s3eAndroidAppiraterInitv, %function
 _Z23s3eAndroidAppiraterInitv:
 .LFB0:
-	.file 1 "G:\\hungryhobo_source\\edk\\s3eandroidappirater\\source\\generic\\s3eAndroidAppirater.cpp"
+	.file 1 "C:\\marmalade\\6.0\\extensions\\s3eandroidappirater\\source\\generic\\s3eAndroidAppirater.cpp"
 	.loc 1 15 0
 	@ Function supports interworking.
 	@ args = 0, pretend = 0, frame = 0
@@ -69,30 +69,54 @@ AppiraterInit:
 .LFB2:
 	.loc 1 27 0
 	@ Function supports interworking.
-	@ args = 0, pretend = 0, frame = 16
+	@ args = 4, pretend = 0, frame = 16
 	@ frame_needed = 0, uses_anonymous_args = 0
 	str	lr, [sp, #-4]!
 .LCFI2:
-	sub	sp, sp, #20
+	sub	sp, sp, #28
 .LCFI3:
-	str	r0, [sp, #12]
-	str	r1, [sp, #8]
-	str	r2, [sp, #4]
-	str	r3, [sp, #0]
+	str	r0, [sp, #20]
+	str	r1, [sp, #16]
+	str	r2, [sp, #12]
+	str	r3, [sp, #8]
 	.loc 1 28 0
-	ldr	r0, [sp, #12]
-	ldr	r1, [sp, #8]
-	ldr	r2, [sp, #4]
-	ldr	r3, [sp, #0]
-	bl	_Z22AppiraterInit_platformPKcS0_ii(PLT)
+	ldr	r3, [sp, #32]
+	str	r3, [sp, #0]
+	ldr	r0, [sp, #20]
+	ldr	r1, [sp, #16]
+	ldr	r2, [sp, #12]
+	ldr	r3, [sp, #8]
+	bl	_Z22AppiraterInit_platformPKcS0_iii(PLT)
 	mov	r3, r0
 	.loc 1 29 0
 	mov	r0, r3
-	add	sp, sp, #20
+	add	sp, sp, #28
 	ldr	lr, [sp], #4
 	bx	lr
 .LFE2:
 	.size	AppiraterInit, .-AppiraterInit
+	.section	.text.AppiraterEventOccured,"ax",%progbits
+	.align	2
+	.global	AppiraterEventOccured
+	.hidden	AppiraterEventOccured
+	.type	AppiraterEventOccured, %function
+AppiraterEventOccured:
+.LFB3:
+	.loc 1 32 0
+	@ Function supports interworking.
+	@ args = 0, pretend = 0, frame = 0
+	@ frame_needed = 0, uses_anonymous_args = 0
+	stmfd	sp!, {r4, lr}
+.LCFI4:
+	.loc 1 33 0
+	bl	_Z30AppiraterEventOccured_platformv(PLT)
+	mov	r3, r0
+	.loc 1 34 0
+	mov	r0, r3
+	ldmfd	sp!, {r4, lr}
+	bx	lr
+.LFE3:
+	.size	AppiraterEventOccured, .-AppiraterEventOccured
 	.section	.debug_frame,"",%progbits
 .Lframe0:
 	.4byte	.LECIE0-.LSCIE0
@@ -157,12 +181,30 @@ AppiraterInit:
 	.byte	0x4
 	.4byte	.LCFI3-.LCFI2
 	.byte	0xe
-	.uleb128 0x18
+	.uleb128 0x20
 	.byte	0x11
 	.uleb128 0xe
 	.sleb128 1
 	.align	2
 .LEFDE4:
+.LSFDE6:
+	.4byte	.LEFDE6-.LASFDE6
+.LASFDE6:
+	.4byte	.Lframe0
+	.4byte	.LFB3
+	.4byte	.LFE3-.LFB3
+	.byte	0x4
+	.4byte	.LCFI4-.LFB3
+	.byte	0xe
+	.uleb128 0x8
+	.byte	0x11
+	.uleb128 0xe
+	.sleb128 1
+	.byte	0x11
+	.uleb128 0x4
+	.sleb128 2
+	.align	2
+.LEFDE6:
 	.text
 .Letext0:
 	.section	.debug_loc,"",%progbits
@@ -208,19 +250,33 @@ AppiraterInit:
 	.4byte	.LFE2
 	.2byte	0x2
 	.byte	0x7d
-	.sleb128 24
+	.sleb128 32
 	.4byte	0x0
 	.4byte	0x0
-	.file 2 "d:/marmalade/5.2/s3e/h/s3eTypes.h"
+.LLST3:
+	.4byte	.LFB3
+	.4byte	.LCFI4
+	.2byte	0x2
+	.byte	0x7d
+	.sleb128 0
+	.4byte	.LCFI4
+	.4byte	.LFE3
+	.2byte	0x2
+	.byte	0x7d
+	.sleb128 8
+	.4byte	0x0
+	.4byte	0x0
+	.file 2 "../../../s3e/h/s3eTypes.h"
 	.section	.debug_info
-	.4byte	0x120
+	.4byte	0x14a
 	.2byte	0x2
 	.4byte	.Ldebug_abbrev0
 	.byte	0x4
 	.uleb128 0x1
-	.4byte	.LASF15
+	.4byte	.LASF18
 	.byte	0x4
-	.4byte	.LASF16
+	.4byte	.LASF19
+	.4byte	.LASF20
 	.4byte	0x0
 	.4byte	0x0
 	.4byte	.Ldebug_ranges0+0x0
@@ -262,11 +318,11 @@ AppiraterInit:
 	.byte	0x7
 	.4byte	.LASF7
 	.uleb128 0x4
-	.4byte	.LASF17
+	.4byte	.LASF21
 	.byte	0x4
 	.byte	0x2
 	.byte	0xe2
-	.4byte	0x7d
+	.4byte	0x81
 	.uleb128 0x5
 	.4byte	.LASF8
 	.sleb128 0
@@ -275,44 +331,44 @@ AppiraterInit:
 	.sleb128 1
 	.byte	0x0
 	.uleb128 0x6
-	.4byte	.LASF17
+	.4byte	.LASF21
 	.byte	0x2
 	.byte	0xe6
-	.4byte	0x64
+	.4byte	0x68
 	.uleb128 0x7
 	.byte	0x1
-	.4byte	.LASF18
+	.4byte	.LASF22
 	.byte	0x1
 	.byte	0xe
-	.4byte	.LASF19
-	.4byte	0x7d
+	.4byte	.LASF23
+	.4byte	0x81
 	.4byte	.LFB0
 	.4byte	.LFE0
 	.4byte	.LLST0
 	.uleb128 0x8
 	.byte	0x1
-	.4byte	.LASF20
+	.4byte	.LASF16
 	.byte	0x1
 	.byte	0x14
-	.4byte	.LASF21
+	.4byte	.LASF24
 	.4byte	.LFB1
 	.4byte	.LFE1
 	.4byte	.LLST1
 	.uleb128 0x9
 	.byte	0x1
-	.4byte	.LASF22
+	.4byte	.LASF25
 	.byte	0x1
 	.byte	0x1a
-	.4byte	0x7d
+	.4byte	0x81
 	.4byte	.LFB2
 	.4byte	.LFE2
 	.4byte	.LLST2
-	.4byte	0x111
+	.4byte	0x123
 	.uleb128 0xa
 	.4byte	.LASF10
 	.byte	0x1
 	.byte	0x1a
-	.4byte	0x111
+	.4byte	0x123
 	.byte	0x2
 	.byte	0x91
 	.sleb128 -12
@@ -320,7 +376,7 @@ AppiraterInit:
 	.4byte	.LASF11
 	.byte	0x1
 	.byte	0x1a
-	.4byte	0x111
+	.4byte	0x123
 	.byte	0x2
 	.byte	0x91
 	.sleb128 -16
@@ -328,7 +384,7 @@ AppiraterInit:
 	.4byte	.LASF12
 	.byte	0x1
 	.byte	0x1a
-	.4byte	0x48
+	.4byte	0x4c
 	.byte	0x2
 	.byte	0x91
 	.sleb128 -20
@@ -336,20 +392,37 @@ AppiraterInit:
 	.4byte	.LASF13
 	.byte	0x1
 	.byte	0x1a
-	.4byte	0x48
+	.4byte	0x4c
 	.byte	0x2
 	.byte	0x91
 	.sleb128 -24
+	.uleb128 0xa
+	.4byte	.LASF14
+	.byte	0x1
+	.byte	0x1a
+	.4byte	0x4c
+	.byte	0x2
+	.byte	0x91
+	.sleb128 0
 	.byte	0x0
 	.uleb128 0xb
 	.byte	0x4
-	.4byte	0x117
+	.4byte	0x129
 	.uleb128 0xc
-	.4byte	0x11c
+	.4byte	0x12e
 	.uleb128 0x2
 	.byte	0x1
 	.byte	0x6
-	.4byte	.LASF14
+	.4byte	.LASF15
+	.uleb128 0xd
+	.byte	0x1
+	.4byte	.LASF17
+	.byte	0x1
+	.byte	0x1f
+	.4byte	0x81
+	.4byte	.LFB3
+	.4byte	.LFE3
+	.4byte	.LLST3
 	.byte	0x0
 	.section	.debug_abbrev
 	.uleb128 0x1
@@ -360,6 +433,8 @@ AppiraterInit:
 	.uleb128 0x13
 	.uleb128 0xb
 	.uleb128 0x3
+	.uleb128 0xe
+	.uleb128 0x1b
 	.uleb128 0xe
 	.uleb128 0x11
 	.uleb128 0x1
@@ -528,21 +603,44 @@ AppiraterInit:
 	.uleb128 0x13
 	.byte	0x0
 	.byte	0x0
+	.uleb128 0xd
+	.uleb128 0x2e
+	.byte	0x0
+	.uleb128 0x3f
+	.uleb128 0xc
+	.uleb128 0x3
+	.uleb128 0xe
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x11
+	.uleb128 0x1
+	.uleb128 0x12
+	.uleb128 0x1
+	.uleb128 0x40
+	.uleb128 0x6
+	.byte	0x0
+	.byte	0x0
 	.byte	0x0
 	.section	.debug_pubnames,"",%progbits
-	.4byte	0x5d
+	.4byte	0x77
 	.2byte	0x2
 	.4byte	.Ldebug_info0
-	.4byte	0x124
-	.4byte	0x88
+	.4byte	0x14e
+	.4byte	0x8c
 	.ascii	"s3eAndroidAppiraterInit\000"
-	.4byte	0xa4
+	.4byte	0xa8
 	.ascii	"s3eAndroidAppiraterTerminate\000"
-	.4byte	0xbc
+	.4byte	0xc0
 	.ascii	"AppiraterInit\000"
+	.4byte	0x135
+	.ascii	"AppiraterEventOccured\000"
 	.4byte	0x0
 	.section	.debug_aranges,"",%progbits
-	.4byte	0x2c
+	.4byte	0x34
 	.2byte	0x2
 	.4byte	.Ldebug_info0
 	.byte	0x4
@@ -555,6 +653,8 @@ AppiraterInit:
 	.4byte	.LFE1-.LFB1
 	.4byte	.LFB2
 	.4byte	.LFE2-.LFB2
+	.4byte	.LFB3
+	.4byte	.LFE3-.LFB3
 	.4byte	0x0
 	.4byte	0x0
 	.section	.debug_ranges,"",%progbits
@@ -565,18 +665,21 @@ AppiraterInit:
 	.4byte	.LFE1
 	.4byte	.LFB2
 	.4byte	.LFE2
+	.4byte	.LFB3
+	.4byte	.LFE3
 	.4byte	0x0
 	.4byte	0x0
 	.section	.debug_str,"MS",%progbits,1
 .LASF13:
 	.ascii	"iLaunches\000"
-.LASF20:
-	.ascii	"s3eAndroidAppiraterTerminate\000"
 .LASF16:
-	.ascii	"G:\\hungryhobo_source\\edk\\s3eandroidappirater\\so"
-	.ascii	"urce\\generic\\s3eAndroidAppirater.cpp\000"
-.LASF21:
+	.ascii	"s3eAndroidAppiraterTerminate\000"
+.LASF24:
 	.ascii	"_Z28s3eAndroidAppiraterTerminatev\000"
+.LASF20:
+	.ascii	"c:\\\\marmalade\\\\6.0\\\\extensions\\\\s3eandroida"
+	.ascii	"ppirater\\\\build_s3eandroidappirater_android_linux"
+	.ascii	"_scons_arm\000"
 .LASF10:
 	.ascii	"cTitle\000"
 .LASF8:
@@ -589,13 +692,18 @@ AppiraterInit:
 	.ascii	"long unsigned int\000"
 .LASF2:
 	.ascii	"short unsigned int\000"
-.LASF18:
-	.ascii	"s3eAndroidAppiraterInit\000"
+.LASF17:
+	.ascii	"AppiraterEventOccured\000"
 .LASF19:
+	.ascii	"C:\\marmalade\\6.0\\extensions\\s3eandroidappirater"
+	.ascii	"\\source\\generic\\s3eAndroidAppirater.cpp\000"
+.LASF22:
+	.ascii	"s3eAndroidAppiraterInit\000"
+.LASF23:
 	.ascii	"_Z23s3eAndroidAppiraterInitv\000"
 .LASF4:
 	.ascii	"unsigned int\000"
-.LASF15:
+.LASF18:
 	.ascii	"GNU C++ 4.4.3\000"
 .LASF6:
 	.ascii	"long long unsigned int\000"
@@ -604,16 +712,18 @@ AppiraterInit:
 .LASF5:
 	.ascii	"long long int\000"
 .LASF11:
-	.ascii	"cMsg\000"
-.LASF22:
+	.ascii	"cAppName\000"
+.LASF25:
 	.ascii	"AppiraterInit\000"
+.LASF14:
+	.ascii	"iEvents\000"
 .LASF3:
 	.ascii	"short int\000"
-.LASF14:
+.LASF15:
 	.ascii	"char\000"
 .LASF1:
 	.ascii	"signed char\000"
-.LASF17:
+.LASF21:
 	.ascii	"s3eResult\000"
 	.ident	"GCC: (GNU) 4.4.3"
 	.section	.note.GNU-stack,"",%progbits

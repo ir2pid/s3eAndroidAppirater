@@ -2,4 +2,5 @@ include:
 #include <s3eTypes.h>
 
 functions:
-s3eResult AppiraterInit(const char* cTitle, const char* cMsg,int iDays,int iLaunches) S3E_RESULT_ERROR run_on_os_thread
+s3eResult AppiraterInit(const char* cTitle, const char* cAppName,int iDays,int iLaunches,int iEvents) S3E_RESULT_ERROR run_on_os_thread
+s3eResult AppiraterEventOccured() S3E_RESULT_ERROR run_on_os_thread

@@ -26,7 +26,9 @@ S3E_BEGIN_C_DECL
  */
 s3eBool s3eAndroidAppiraterAvailable();
 
-s3eResult AppiraterInit(const char* cTitle, const char* cMsg,int iDays,int iLaunches);
+s3eResult AppiraterInit(const char* cTitle, const char* cAppName,int iDays,int iLaunches,int iEvents);
+
+s3eResult AppiraterEventOccured();
 
 S3E_END_C_DECL
 

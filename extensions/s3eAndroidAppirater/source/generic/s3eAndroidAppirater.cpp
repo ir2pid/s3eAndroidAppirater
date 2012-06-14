@@ -23,7 +23,12 @@ void s3eAndroidAppiraterTerminate()
     s3eAndroidAppiraterTerminate_platform();
 }
 
-s3eResult AppiraterInit(const char* cTitle, const char* cMsg, int iDays, int iLaunches)
+s3eResult AppiraterInit(const char* cTitle, const char* cAppName, int iDays, int iLaunches, int iEvents)
 {
-	return AppiraterInit_platform(cTitle, cMsg, iDays, iLaunches);
+	return AppiraterInit_platform(cTitle, cAppName, iDays, iLaunches, iEvents);
+}
+
+s3eResult AppiraterEventOccured()
+{
+	return AppiraterEventOccured_platform();
 }

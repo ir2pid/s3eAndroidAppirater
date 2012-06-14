@@ -42,7 +42,9 @@ void s3eAndroidAppiraterTerminate();
  * Platform-specific termination, implemented on each platform
  */
 void s3eAndroidAppiraterTerminate_platform();
-s3eResult AppiraterInit_platform(const char* cTitle, const char* cMsg, int iDays, int iLaunches);
+s3eResult AppiraterInit_platform(const char* cTitle, const char* cAppName, int iDays, int iLaunches, int iEvents);
+
+s3eResult AppiraterEventOccured_platform();
 
 
 #endif /* !S3EANDROIDAPPIRATER_INTERNAL_H */

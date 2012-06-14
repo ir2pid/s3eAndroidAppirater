@@ -1,25 +1,25 @@
-# 1 "G:\\hungryhobo_source\\edk\\s3eandroidappirater\\source\\generic\\s3eAndroidAppirater_register.cpp"
-# 1 "g:\\hungryhobo_source\\edk\\s3eandroidappirater\\build_s3eandroidappirater_android_linux_scons_arm//"
+# 1 "C:\\marmalade\\6.0\\extensions\\s3eandroidappirater\\source\\generic\\s3eAndroidAppirater_register.cpp"
+# 1 "c:\\marmalade\\6.0\\extensions\\s3eandroidappirater\\build_s3eandroidappirater_android_linux_scons_arm//"
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "./temp_defines_debug.h" 1
 # 1 "<command-line>" 2
-# 1 "G:\\hungryhobo_source\\edk\\s3eandroidappirater\\source\\generic\\s3eAndroidAppirater_register.cpp"
-# 13 "G:\\hungryhobo_source\\edk\\s3eandroidappirater\\source\\generic\\s3eAndroidAppirater_register.cpp"
-# 1 "d:/marmalade/5.2/modules/iwutil/h/IwDebug.h" 1
-# 15 "d:/marmalade/5.2/modules/iwutil/h/IwDebug.h"
-# 1 "d:/marmalade/5.2/s3e/h/s3eTypes.h" 1
-# 37 "d:/marmalade/5.2/s3e/h/s3eTypes.h"
+# 1 "C:\\marmalade\\6.0\\extensions\\s3eandroidappirater\\source\\generic\\s3eAndroidAppirater_register.cpp"
+# 13 "C:\\marmalade\\6.0\\extensions\\s3eandroidappirater\\source\\generic\\s3eAndroidAppirater_register.cpp"
+# 1 "../../../modules/iwutil/h/IwDebug.h" 1
+# 15 "../../../modules/iwutil/h/IwDebug.h"
+# 1 "../../../s3e/h/s3eTypes.h" 1
+# 37 "../../../s3e/h/s3eTypes.h"
 typedef unsigned char s3e_uint8_t;
 typedef signed char s3e_int8_t;
 typedef unsigned short int s3e_uint16_t;
 typedef signed short int s3e_int16_t;
 typedef unsigned int s3e_uint32_t;
 typedef signed int s3e_int32_t;
-# 51 "d:/marmalade/5.2/s3e/h/s3eTypes.h"
+# 51 "../../../s3e/h/s3eTypes.h"
   typedef signed long long s3e_int64_t;
   typedef unsigned long long s3e_uint64_t;
-# 74 "d:/marmalade/5.2/s3e/h/s3eTypes.h"
+# 74 "../../../s3e/h/s3eTypes.h"
 typedef s3e_uint64_t uint64_t;
 typedef s3e_int64_t int64_t;
 typedef s3e_uint32_t uint32_t;
@@ -28,10 +28,10 @@ typedef s3e_uint16_t uint16_t;
 typedef s3e_int16_t int16_t;
 typedef s3e_uint8_t uint8_t;
 typedef s3e_int8_t int8_t;
-# 96 "d:/marmalade/5.2/s3e/h/s3eTypes.h"
+# 96 "../../../s3e/h/s3eTypes.h"
     typedef int intptr_t;
     typedef unsigned int uintptr_t;
-# 108 "d:/marmalade/5.2/s3e/h/s3eTypes.h"
+# 108 "../../../s3e/h/s3eTypes.h"
 typedef unsigned int uint;
 typedef unsigned short int ushort;
 typedef unsigned long int ulong;
@@ -71,7 +71,7 @@ typedef uint16_t uint16;
 
 
 typedef int16_t int16;
-# 226 "d:/marmalade/5.2/s3e/h/s3eTypes.h"
+# 226 "../../../s3e/h/s3eTypes.h"
 typedef enum s3eResult
 {
     S3E_RESULT_SUCCESS = 0,
@@ -82,16 +82,16 @@ typedef enum s3eResult
 
 
 typedef uint8 s3eBool;
-# 246 "d:/marmalade/5.2/s3e/h/s3eTypes.h"
+# 246 "../../../s3e/h/s3eTypes.h"
 typedef unsigned short s3eWChar;
-# 256 "d:/marmalade/5.2/s3e/h/s3eTypes.h"
+# 256 "../../../s3e/h/s3eTypes.h"
 typedef int32 (*s3eCallback) (void* systemData, void* userData);
-# 16 "d:/marmalade/5.2/modules/iwutil/h/IwDebug.h" 2
-# 1 "d:/marmalade/5.2/s3e/h/s3eDebug.h" 1
-# 15 "d:/marmalade/5.2/s3e/h/s3eDebug.h"
-# 1 "d:/marmalade/5.2/s3e/h/s3eTypes.h" 1
-# 16 "d:/marmalade/5.2/s3e/h/s3eDebug.h" 2
-# 38 "d:/marmalade/5.2/s3e/h/s3eDebug.h"
+# 16 "../../../modules/iwutil/h/IwDebug.h" 2
+# 1 "../../../s3e/h/s3eDebug.h" 1
+# 15 "../../../s3e/h/s3eDebug.h"
+# 1 "../../../s3e/h/s3eTypes.h" 1
+# 16 "../../../s3e/h/s3eDebug.h" 2
+# 38 "../../../s3e/h/s3eDebug.h"
 typedef enum s3eDebugProperty
 {
 
@@ -132,9 +132,9 @@ typedef enum s3eDebugProperty
     S3E_DEBUG_FONT_HEIGHT = 6
 
 } s3eDebugProperty;
-# 95 "d:/marmalade/5.2/s3e/h/s3eDebug.h"
+# 95 "../../../s3e/h/s3eDebug.h"
 extern "C" int32 s3eDebugGetInt(s3eDebugProperty property);
-# 113 "d:/marmalade/5.2/s3e/h/s3eDebug.h"
+# 113 "../../../s3e/h/s3eDebug.h"
 extern "C" s3eResult s3eDebugSetInt(s3eDebugProperty property, int32 value);
 
 
@@ -145,18 +145,18 @@ extern "C" s3eResult s3eDebugSetInt(s3eDebugProperty property, int32 value);
 
 typedef enum s3eDebugCallback
 {
-# 137 "d:/marmalade/5.2/s3e/h/s3eDebug.h"
+# 137 "../../../s3e/h/s3eDebug.h"
     S3E_DEBUG_ASSERT = 0,
-# 152 "d:/marmalade/5.2/s3e/h/s3eDebug.h"
+# 152 "../../../s3e/h/s3eDebug.h"
     S3E_DEBUG_ERROR = 1,
 
     S3E_DEBUG_CALLBACK_MAX
 } s3eDebugCallback;
-# 180 "d:/marmalade/5.2/s3e/h/s3eDebug.h"
+# 180 "../../../s3e/h/s3eDebug.h"
 extern "C" s3eResult s3eDebugRegister(s3eDebugCallback cbid, s3eCallback fn, void* userData);
-# 197 "d:/marmalade/5.2/s3e/h/s3eDebug.h"
+# 197 "../../../s3e/h/s3eDebug.h"
 extern "C" s3eResult s3eDebugUnRegister(s3eDebugCallback cbid, s3eCallback fn);
-# 206 "d:/marmalade/5.2/s3e/h/s3eDebug.h"
+# 206 "../../../s3e/h/s3eDebug.h"
 typedef enum s3eDebugError
 {
     S3E_DEBUG_ERR_NONE = 0,
@@ -165,9 +165,9 @@ typedef enum s3eDebugError
     S3E_DEBUG_ERR_ALREADY_REG = 3,
     S3E_DEBUG_ERR_NOT_FOUND = 4
 } s3eDebugError;
-# 226 "d:/marmalade/5.2/s3e/h/s3eDebug.h"
+# 226 "../../../s3e/h/s3eDebug.h"
 extern "C" s3eDebugError s3eDebugGetError();
-# 239 "d:/marmalade/5.2/s3e/h/s3eDebug.h"
+# 239 "../../../s3e/h/s3eDebug.h"
 extern "C" const char* s3eDebugGetErrorString();
 
 typedef enum s3eErrorShowResult
@@ -219,9 +219,9 @@ typedef enum s3eMessageType
 
 
 extern "C" s3eBool s3eDebugIsDebuggerPresent();
-# 305 "d:/marmalade/5.2/s3e/h/s3eDebug.h"
+# 305 "../../../s3e/h/s3eDebug.h"
 extern "C" void s3eDebugOutputString(const char* pStr);
-# 317 "d:/marmalade/5.2/s3e/h/s3eDebug.h"
+# 317 "../../../s3e/h/s3eDebug.h"
 extern "C" s3eErrorShowResult s3eDebugErrorShow(s3eMessageType type, const char* string);
 
 
@@ -234,9 +234,9 @@ extern "C" s3eErrorShowResult s3eDebugErrorPrintf(const char* fmt, ...)
 __attribute__((format(printf, 1, 2)))
 
 ;
-# 342 "d:/marmalade/5.2/s3e/h/s3eDebug.h"
+# 342 "../../../s3e/h/s3eDebug.h"
 extern "C" s3eErrorShowResult s3eDebugAssertShow(s3eMessageType type, const char* string);
-# 355 "d:/marmalade/5.2/s3e/h/s3eDebug.h"
+# 355 "../../../s3e/h/s3eDebug.h"
 extern "C" void s3eDebugTraceLine(const char* string);
 
 
@@ -256,9 +256,9 @@ __attribute__((format(printf, 1, 2)))
 
 
 extern "C" void s3eDebugTraceClearFile();
-# 382 "d:/marmalade/5.2/s3e/h/s3eDebug.h"
+# 382 "../../../s3e/h/s3eDebug.h"
 extern "C" void s3eDebugTraceFlush();
-# 407 "d:/marmalade/5.2/s3e/h/s3eDebug.h"
+# 407 "../../../s3e/h/s3eDebug.h"
 extern "C" void s3eDebugPrint(int x, int y, const char* string, s3eBool wrap);
 
 
@@ -279,9 +279,9 @@ __attribute__((format(printf, 4, 5)))
 
 
 extern "C" s3eBool s3eDebugTraceChannelSwitch(const char* channel, s3eBool new_state);
-# 17 "d:/marmalade/5.2/modules/iwutil/h/IwDebug.h" 2
-# 1 "d:/marmalade/5.2/s3e/h/s3eDevice.h" 1
-# 39 "d:/marmalade/5.2/s3e/h/s3eDevice.h"
+# 17 "../../../modules/iwutil/h/IwDebug.h" 2
+# 1 "../../../s3e/h/s3eDevice.h" 1
+# 39 "../../../s3e/h/s3eDevice.h"
 typedef enum s3eDeviceError
 {
     S3E_DEVICE_ERR_NONE = 0,
@@ -297,11 +297,11 @@ typedef enum s3eDeviceError
     S3E_DEVICE_ERR_INVALID_DRIVE = 10,
     S3E_DEVICE_ERR_INVALID_PATH = 11
 } s3eDeviceError;
-# 66 "d:/marmalade/5.2/s3e/h/s3eDevice.h"
+# 66 "../../../s3e/h/s3eDevice.h"
 extern "C" s3eDeviceError s3eDeviceGetError();
-# 80 "d:/marmalade/5.2/s3e/h/s3eDevice.h"
+# 80 "../../../s3e/h/s3eDevice.h"
 extern "C" const char* s3eDeviceGetErrorString();
-# 89 "d:/marmalade/5.2/s3e/h/s3eDevice.h"
+# 89 "../../../s3e/h/s3eDevice.h"
 typedef enum s3eDeviceFPUType
 {
     S3E_DEVICE_FPU_NONE = 0,
@@ -331,7 +331,7 @@ typedef enum s3eDeviceProperty
 
 
     S3E_DEVICE_CLASS = 1,
-# 128 "d:/marmalade/5.2/s3e/h/s3eDevice.h"
+# 128 "../../../s3e/h/s3eDevice.h"
     S3E_DEVICE_ID = 2,
 
 
@@ -370,7 +370,7 @@ typedef enum s3eDeviceProperty
 
 
     S3E_DEVICE_ARCHITECTURE = 8,
-# 175 "d:/marmalade/5.2/s3e/h/s3eDevice.h"
+# 175 "../../../s3e/h/s3eDevice.h"
     S3E_DEVICE_S3E_VERSION = 9,
 
 
@@ -392,7 +392,7 @@ typedef enum s3eDeviceProperty
 
 
     S3E_DEVICE_MAINS_POWER = 12,
-# 204 "d:/marmalade/5.2/s3e/h/s3eDevice.h"
+# 204 "../../../s3e/h/s3eDevice.h"
     S3E_DEVICE_OS_VERSION = 13,
 
 
@@ -400,7 +400,7 @@ typedef enum s3eDeviceProperty
 
 
     S3E_DEVICE_CHIPSET = 14,
-# 219 "d:/marmalade/5.2/s3e/h/s3eDevice.h"
+# 219 "../../../s3e/h/s3eDevice.h"
     S3E_DEVICE_EXIT_CODE = 15,
 
 
@@ -420,9 +420,9 @@ typedef enum s3eDeviceProperty
 
 
     S3E_DEVICE_ADVANCE_SOFTKEY_POSITION = 18,
-# 248 "d:/marmalade/5.2/s3e/h/s3eDevice.h"
+# 248 "../../../s3e/h/s3eDevice.h"
     S3E_DEVICE_SDK_VERSION = 19,
-# 257 "d:/marmalade/5.2/s3e/h/s3eDevice.h"
+# 257 "../../../s3e/h/s3eDevice.h"
     S3E_DEVICE_LOCALE = 20,
 
 
@@ -454,9 +454,9 @@ typedef enum s3eDeviceProperty
 
 
     S3E_DEVICE_PROXIMITY = 24,
-# 303 "d:/marmalade/5.2/s3e/h/s3eDevice.h"
+# 303 "../../../s3e/h/s3eDevice.h"
     S3E_DEVICE_UNIQUE_ID = 25,
-# 314 "d:/marmalade/5.2/s3e/h/s3eDevice.h"
+# 314 "../../../s3e/h/s3eDevice.h"
     S3E_DEVICE_IMSI = 26,
 
 
@@ -711,7 +711,7 @@ typedef enum s3eDeviceArchitecture
     S3E_DEVICE_ARCHITECTURE_MIPS = 13,
     S3E_DEVICE_ARCHITECTURE_MAX = 14
 } s3eDeviceArchitecture;
-# 576 "d:/marmalade/5.2/s3e/h/s3eDevice.h"
+# 576 "../../../s3e/h/s3eDevice.h"
 typedef enum s3eDeviceSoftKeyPosition
 {
     S3E_DEVICE_SOFTKEY_BOTTOM_LEFT = 0,
@@ -719,21 +719,21 @@ typedef enum s3eDeviceSoftKeyPosition
     S3E_DEVICE_SOFTKEY_TOP_RIGHT = 2,
     S3E_DEVICE_SOFTKEY_TOP_LEFT = 3
 } s3eDeviceSoftKeyPosition;
-# 617 "d:/marmalade/5.2/s3e/h/s3eDevice.h"
+# 617 "../../../s3e/h/s3eDevice.h"
 extern "C" const char* s3eDeviceGetString(s3eDeviceProperty property);
-# 652 "d:/marmalade/5.2/s3e/h/s3eDevice.h"
+# 652 "../../../s3e/h/s3eDevice.h"
 extern "C" int32 s3eDeviceGetInt(s3eDeviceProperty property);
-# 672 "d:/marmalade/5.2/s3e/h/s3eDevice.h"
+# 672 "../../../s3e/h/s3eDevice.h"
 extern "C" s3eResult s3eDeviceSetInt(s3eDeviceProperty property, int32 value);
-# 700 "d:/marmalade/5.2/s3e/h/s3eDevice.h"
+# 700 "../../../s3e/h/s3eDevice.h"
 extern "C" int64 s3eDeviceYield(int32 ms =0);
-# 722 "d:/marmalade/5.2/s3e/h/s3eDevice.h"
+# 722 "../../../s3e/h/s3eDevice.h"
 extern "C" void s3eDeviceUnYield();
-# 750 "d:/marmalade/5.2/s3e/h/s3eDevice.h"
+# 750 "../../../s3e/h/s3eDevice.h"
 extern "C" void s3eDeviceYieldUntilEvent(int32 ms =0x7fffffffL);
-# 785 "d:/marmalade/5.2/s3e/h/s3eDevice.h"
+# 785 "../../../s3e/h/s3eDevice.h"
 extern "C" s3eResult s3eDeviceExecPushNext(const char* filename, const char* config_prepend =__null, const char* config_append =__null);
-# 801 "d:/marmalade/5.2/s3e/h/s3eDevice.h"
+# 801 "../../../s3e/h/s3eDevice.h"
 extern "C" void s3eDeviceExit(int code =0) __attribute__ ((noreturn));
 
 
@@ -760,36 +760,36 @@ typedef enum s3eDeviceState
 
     S3E_DEVICE_STATE_RUNNING = 5
 } s3eDeviceState;
-# 836 "d:/marmalade/5.2/s3e/h/s3eDevice.h"
+# 836 "../../../s3e/h/s3eDevice.h"
 typedef enum s3eDeviceCallback
 {
-# 847 "d:/marmalade/5.2/s3e/h/s3eDevice.h"
+# 847 "../../../s3e/h/s3eDevice.h"
     S3E_DEVICE_PAUSE = 0,
-# 857 "d:/marmalade/5.2/s3e/h/s3eDevice.h"
+# 857 "../../../s3e/h/s3eDevice.h"
     S3E_DEVICE_UNPAUSE = 1,
-# 867 "d:/marmalade/5.2/s3e/h/s3eDevice.h"
+# 867 "../../../s3e/h/s3eDevice.h"
     S3E_DEVICE_EXIT = 2,
-# 883 "d:/marmalade/5.2/s3e/h/s3eDevice.h"
+# 883 "../../../s3e/h/s3eDevice.h"
     S3E_DEVICE_VOL_UP = 17,
-# 899 "d:/marmalade/5.2/s3e/h/s3eDevice.h"
+# 899 "../../../s3e/h/s3eDevice.h"
     S3E_DEVICE_VOL_DOWN = 18,
-# 914 "d:/marmalade/5.2/s3e/h/s3eDevice.h"
+# 914 "../../../s3e/h/s3eDevice.h"
     S3E_DEVICE_MAINS_POWER_CHANGED = 20,
-# 925 "d:/marmalade/5.2/s3e/h/s3eDevice.h"
+# 925 "../../../s3e/h/s3eDevice.h"
     S3E_DEVICE_BACKGROUND = 22,
-# 936 "d:/marmalade/5.2/s3e/h/s3eDevice.h"
+# 936 "../../../s3e/h/s3eDevice.h"
     S3E_DEVICE_FOREGROUND = 23,
-# 950 "d:/marmalade/5.2/s3e/h/s3eDevice.h"
+# 950 "../../../s3e/h/s3eDevice.h"
     S3E_DEVICE_NETWORK_ONLINE = 24,
-# 964 "d:/marmalade/5.2/s3e/h/s3eDevice.h"
+# 964 "../../../s3e/h/s3eDevice.h"
     S3E_DEVICE_NETWORK_OFFLINE = 25,
-# 977 "d:/marmalade/5.2/s3e/h/s3eDevice.h"
+# 977 "../../../s3e/h/s3eDevice.h"
     S3E_DEVICE_SIMULATOR_RESTART = 26,
 
 
     S3E_DEVICE_CALLBACK_MAX
 } s3eDeviceCallback;
-# 999 "d:/marmalade/5.2/s3e/h/s3eDevice.h"
+# 999 "../../../s3e/h/s3eDevice.h"
 typedef struct s3eDeviceVolChangeInfo
 {
 
@@ -798,7 +798,7 @@ typedef struct s3eDeviceVolChangeInfo
 
 
     s3eBool m_VolUp;
-# 1022 "d:/marmalade/5.2/s3e/h/s3eDevice.h"
+# 1022 "../../../s3e/h/s3eDevice.h"
     s3eBool m_OverrideDefaultBehaviour;
 } s3eDeviceVolChangeInfo;
 
@@ -813,9 +813,9 @@ typedef struct s3eDeviceStateChangeInfo
 
     int32 m_State;
 } s3eDeviceStateChangeInfo;
-# 1057 "d:/marmalade/5.2/s3e/h/s3eDevice.h"
+# 1057 "../../../s3e/h/s3eDevice.h"
 extern "C" s3eResult s3eDeviceRegister(s3eDeviceCallback cbid, s3eCallback fn, void* userdata);
-# 1077 "d:/marmalade/5.2/s3e/h/s3eDevice.h"
+# 1077 "../../../s3e/h/s3eDevice.h"
 extern "C" s3eResult s3eDeviceUnRegister(s3eDeviceCallback cbid, s3eCallback fn);
 
 
@@ -825,11 +825,11 @@ extern "C" s3eResult s3eDeviceUnRegister(s3eDeviceCallback cbid, s3eCallback fn)
 
 
 extern "C" void s3eDeviceRequestQuit();
-# 1096 "d:/marmalade/5.2/s3e/h/s3eDevice.h"
+# 1096 "../../../s3e/h/s3eDevice.h"
 extern "C" s3eBool s3eDeviceCheckQuitRequest();
-# 1106 "d:/marmalade/5.2/s3e/h/s3eDevice.h"
+# 1106 "../../../s3e/h/s3eDevice.h"
 extern "C" s3eBool s3eDeviceCheckPauseRequest();
-# 1120 "d:/marmalade/5.2/s3e/h/s3eDevice.h"
+# 1120 "../../../s3e/h/s3eDevice.h"
 extern "C" void s3eDeviceBacklightOn();
 
 
@@ -837,28 +837,28 @@ extern "C" s3eBool s3eDeviceNetworkCheckStart();
 
 
 extern "C" s3eBool s3eDeviceNetworkCheckStop();
-# 18 "d:/marmalade/5.2/modules/iwutil/h/IwDebug.h" 2
-# 1 "d:/marmalade/5.2/modules/iwutil/h/IwCore.h" 1
-# 19 "d:/marmalade/5.2/modules/iwutil/h/IwDebug.h" 2
+# 18 "../../../modules/iwutil/h/IwDebug.h" 2
+# 1 "../../../modules/iwutil/h/IwCore.h" 1
+# 19 "../../../modules/iwutil/h/IwDebug.h" 2
 
 
-# 1 "C:\\android-ndk-r8\\toolchains\\arm-linux-androideabi-4.4.3\\prebuilt\\windows\\bin/../lib/gcc/arm-linux-androideabi/4.4.3/include/stdarg.h" 1 3 4
-# 40 "C:\\android-ndk-r8\\toolchains\\arm-linux-androideabi-4.4.3\\prebuilt\\windows\\bin/../lib/gcc/arm-linux-androideabi/4.4.3/include/stdarg.h" 3 4
+# 1 "C:\\android-ndk-r7c\\toolchains\\arm-linux-androideabi-4.4.3\\prebuilt\\windows\\bin/../lib/gcc/arm-linux-androideabi/4.4.3/include/stdarg.h" 1 3 4
+# 40 "C:\\android-ndk-r7c\\toolchains\\arm-linux-androideabi-4.4.3\\prebuilt\\windows\\bin/../lib/gcc/arm-linux-androideabi/4.4.3/include/stdarg.h" 3 4
 typedef __builtin_va_list __gnuc_va_list;
-# 102 "C:\\android-ndk-r8\\toolchains\\arm-linux-androideabi-4.4.3\\prebuilt\\windows\\bin/../lib/gcc/arm-linux-androideabi/4.4.3/include/stdarg.h" 3 4
+# 102 "C:\\android-ndk-r7c\\toolchains\\arm-linux-androideabi-4.4.3\\prebuilt\\windows\\bin/../lib/gcc/arm-linux-androideabi/4.4.3/include/stdarg.h" 3 4
 typedef __gnuc_va_list va_list;
-# 22 "d:/marmalade/5.2/modules/iwutil/h/IwDebug.h" 2
-# 1 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/stdio.h" 1
-# 41 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/stdio.h"
-# 1 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/sys/cdefs.h" 1
-# 59 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/sys/cdefs.h"
-# 1 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h" 1
-# 60 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/sys/cdefs.h" 2
-# 42 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/stdio.h" 2
-# 1 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/sys/_types.h" 1
-# 40 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/sys/_types.h"
-# 1 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/machine/_types.h" 1
-# 52 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/machine/_types.h"
+# 22 "../../../modules/iwutil/h/IwDebug.h" 2
+# 1 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/stdio.h" 1
+# 41 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/stdio.h"
+# 1 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/sys/cdefs.h" 1
+# 59 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/sys/cdefs.h"
+# 1 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h" 1
+# 60 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/sys/cdefs.h" 2
+# 42 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/stdio.h" 2
+# 1 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/sys/_types.h" 1
+# 40 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/sys/_types.h"
+# 1 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/machine/_types.h" 1
+# 52 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/machine/_types.h"
 typedef signed char __int8_t;
 typedef unsigned char __uint8_t;
 typedef short __int16_t;
@@ -915,12 +915,12 @@ typedef int __time_t;
 typedef int __timer_t;
 
 typedef __builtin_va_list __va_list;
-# 116 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/machine/_types.h"
+# 116 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/machine/_types.h"
 typedef int __wint_t;
 typedef int __rune_t;
 typedef void * __wctrans_t;
 typedef void * __wctype_t;
-# 41 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/sys/_types.h" 2
+# 41 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/sys/_types.h" 2
 
 typedef unsigned long __cpuid_t;
 typedef __int32_t __dev_t;
@@ -951,7 +951,7 @@ typedef union {
  char __mbstate8[128];
  __int64_t __mbstateL;
 } __mbstate_t;
-# 43 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/stdio.h" 2
+# 43 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/stdio.h" 2
 
 
 
@@ -959,26 +959,26 @@ typedef union {
 
 
 
-# 1 "C:\\android-ndk-r8\\toolchains\\arm-linux-androideabi-4.4.3\\prebuilt\\windows\\bin/../lib/gcc/arm-linux-androideabi/4.4.3/include/stddef.h" 1 3 4
-# 211 "C:\\android-ndk-r8\\toolchains\\arm-linux-androideabi-4.4.3\\prebuilt\\windows\\bin/../lib/gcc/arm-linux-androideabi/4.4.3/include/stddef.h" 3 4
+# 1 "C:\\android-ndk-r7c\\toolchains\\arm-linux-androideabi-4.4.3\\prebuilt\\windows\\bin/../lib/gcc/arm-linux-androideabi/4.4.3/include/stddef.h" 1 3 4
+# 211 "C:\\android-ndk-r7c\\toolchains\\arm-linux-androideabi-4.4.3\\prebuilt\\windows\\bin/../lib/gcc/arm-linux-androideabi/4.4.3/include/stddef.h" 3 4
 typedef unsigned int size_t;
-# 51 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/stdio.h" 2
+# 51 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/stdio.h" 2
 
-# 1 "C:\\android-ndk-r8\\toolchains\\arm-linux-androideabi-4.4.3\\prebuilt\\windows\\bin/../lib/gcc/arm-linux-androideabi/4.4.3/include/stddef.h" 1 3 4
-# 149 "C:\\android-ndk-r8\\toolchains\\arm-linux-androideabi-4.4.3\\prebuilt\\windows\\bin/../lib/gcc/arm-linux-androideabi/4.4.3/include/stddef.h" 3 4
+# 1 "C:\\android-ndk-r7c\\toolchains\\arm-linux-androideabi-4.4.3\\prebuilt\\windows\\bin/../lib/gcc/arm-linux-androideabi/4.4.3/include/stddef.h" 1 3 4
+# 149 "C:\\android-ndk-r7c\\toolchains\\arm-linux-androideabi-4.4.3\\prebuilt\\windows\\bin/../lib/gcc/arm-linux-androideabi/4.4.3/include/stddef.h" 3 4
 typedef int ptrdiff_t;
-# 53 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/stdio.h" 2
+# 53 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/stdio.h" 2
 
 
-# 1 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/sys/types.h" 1
-# 33 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/sys/types.h"
-# 1 "C:\\android-ndk-r8\\toolchains\\arm-linux-androideabi-4.4.3\\prebuilt\\windows\\bin/../lib/gcc/arm-linux-androideabi/4.4.3/include/stddef.h" 1 3 4
-# 34 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/sys/types.h" 2
-# 1 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/stdint.h" 1
-# 31 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/stdint.h"
-# 1 "C:\\android-ndk-r8\\toolchains\\arm-linux-androideabi-4.4.3\\prebuilt\\windows\\bin/../lib/gcc/arm-linux-androideabi/4.4.3/include/stddef.h" 1 3 4
-# 32 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/stdint.h" 2
-# 48 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/stdint.h"
+# 1 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/sys/types.h" 1
+# 33 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/sys/types.h"
+# 1 "C:\\android-ndk-r7c\\toolchains\\arm-linux-androideabi-4.4.3\\prebuilt\\windows\\bin/../lib/gcc/arm-linux-androideabi/4.4.3/include/stddef.h" 1 3 4
+# 34 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/sys/types.h" 2
+# 1 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/stdint.h" 1
+# 31 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/stdint.h"
+# 1 "C:\\android-ndk-r7c\\toolchains\\arm-linux-androideabi-4.4.3\\prebuilt\\windows\\bin/../lib/gcc/arm-linux-androideabi/4.4.3/include/stddef.h" 1 3 4
+# 32 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/stdint.h" 2
+# 48 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/stdint.h"
 typedef __int8_t int8_t;
 typedef __uint8_t uint8_t;
 typedef __int16_t int16_t;
@@ -999,43 +999,43 @@ typedef int8_t int_fast8_t;
 
 typedef uint8_t uint_least8_t;
 typedef uint8_t uint_fast8_t;
-# 97 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/stdint.h"
+# 97 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/stdint.h"
 typedef int16_t int_least16_t;
 typedef int32_t int_fast16_t;
 
 typedef uint16_t uint_least16_t;
 typedef uint32_t uint_fast16_t;
-# 130 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/stdint.h"
+# 130 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/stdint.h"
 typedef int32_t int_least32_t;
 typedef int32_t int_fast32_t;
 
 typedef uint32_t uint_least32_t;
 typedef uint32_t uint_fast32_t;
-# 163 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/stdint.h"
+# 163 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/stdint.h"
 typedef int64_t int_least64_t;
 typedef int64_t int_fast64_t;
 
 typedef uint64_t uint_least64_t;
 typedef uint64_t uint_fast64_t;
-# 207 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/stdint.h"
+# 207 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/stdint.h"
 typedef int intptr_t;
 typedef unsigned int uintptr_t;
-# 232 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/stdint.h"
+# 232 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/stdint.h"
 typedef uint64_t uintmax_t;
 typedef int64_t intmax_t;
-# 268 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/stdint.h"
+# 268 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/stdint.h"
 typedef long int ssize_t;
-# 35 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/sys/types.h" 2
+# 35 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/sys/types.h" 2
 
 
-# 1 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/linux/posix_types.h" 1
-# 15 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/linux/posix_types.h"
-# 1 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/linux/stddef.h" 1
-# 15 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/linux/stddef.h"
-# 1 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/linux/compiler.h" 1
-# 16 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/linux/stddef.h" 2
-# 16 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/linux/posix_types.h" 2
-# 32 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/linux/posix_types.h"
+# 1 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/linux/posix_types.h" 1
+# 15 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/linux/posix_types.h"
+# 1 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/linux/stddef.h" 1
+# 15 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/linux/stddef.h"
+# 1 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/linux/compiler.h" 1
+# 16 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/linux/stddef.h" 2
+# 16 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/linux/posix_types.h" 2
+# 32 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/linux/posix_types.h"
 typedef struct {
  unsigned long fds_bits [(1024/(8 * sizeof(unsigned long)))];
 } __kernel_fd_set;
@@ -1045,8 +1045,8 @@ typedef void (*__kernel_sighandler_t)(int);
 typedef int __kernel_key_t;
 typedef int __kernel_mqd_t;
 
-# 1 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/asm/posix_types.h" 1
-# 15 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/asm/posix_types.h"
+# 1 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/asm/posix_types.h" 1
+# 15 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/asm/posix_types.h"
 typedef unsigned long __kernel_ino_t;
 typedef unsigned short __kernel_mode_t;
 typedef unsigned short __kernel_nlink_t;
@@ -1085,10 +1085,10 @@ typedef struct {
  int __val[2];
 
 } __kernel_fsid_t;
-# 42 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/linux/posix_types.h" 2
-# 38 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/sys/types.h" 2
-# 1 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/asm/types.h" 1
-# 17 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/asm/types.h"
+# 42 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/linux/posix_types.h" 2
+# 38 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/sys/types.h" 2
+# 1 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/asm/types.h" 1
+# 17 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/asm/types.h"
 typedef unsigned short umode_t;
 
 typedef __signed__ char __s8;
@@ -1103,9 +1103,9 @@ typedef unsigned int __u32;
 
 typedef __signed__ long long __s64;
 typedef unsigned long long __u64;
-# 39 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/sys/types.h" 2
-# 1 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/linux/types.h" 1
-# 21 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/linux/types.h"
+# 39 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/sys/types.h" 2
+# 1 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/linux/types.h" 1
+# 21 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/linux/types.h"
 typedef __u16 __le16;
 typedef __u16 __be16;
 typedef __u32 __le32;
@@ -1121,9 +1121,9 @@ struct ustat {
  char f_fname[6];
  char f_fpack[6];
 };
-# 40 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/sys/types.h" 2
-# 1 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/machine/kernel.h" 1
-# 34 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/machine/kernel.h"
+# 40 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/sys/types.h" 2
+# 1 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/machine/kernel.h" 1
+# 34 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/machine/kernel.h"
 typedef unsigned long __kernel_blkcnt_t;
 typedef unsigned long __kernel_blksize_t;
 
@@ -1131,10 +1131,10 @@ typedef unsigned long __kernel_blksize_t;
 typedef unsigned long __kernel_fsblkcnt_t;
 typedef unsigned long __kernel_fsfilcnt_t;
 typedef unsigned int __kernel_id_t;
-# 41 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/sys/types.h" 2
+# 41 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/sys/types.h" 2
 
 typedef __u32 __kernel_dev_t;
-# 52 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/sys/types.h"
+# 52 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/sys/types.h"
 typedef __kernel_blkcnt_t blkcnt_t;
 typedef __kernel_blksize_t blksize_t;
 typedef __kernel_clock_t clock_t;
@@ -1156,7 +1156,7 @@ typedef __kernel_loff_t loff_t;
 typedef loff_t off64_t;
 
 typedef __kernel_pid_t pid_t;
-# 99 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/sys/types.h"
+# 99 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/sys/types.h"
 typedef __kernel_suseconds_t suseconds_t;
 typedef __kernel_time_t time_t;
 typedef __kernel_uid32_t uid_t;
@@ -1171,8 +1171,8 @@ typedef unsigned int uint_t;
 typedef unsigned int uint;
 
 
-# 1 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/sys/sysmacros.h" 1
-# 36 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/sys/sysmacros.h"
+# 1 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/sys/sysmacros.h" 1
+# 36 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/sys/sysmacros.h"
 static __inline__ int major(dev_t _dev)
 {
   return (_dev >> 8) & 0xfff;
@@ -1187,7 +1187,7 @@ static __inline__ dev_t makedev(int __ma, int __mi)
 {
   return ((__ma & 0xfff) << 8) | (__mi & 0xff) | ((__mi & 0xfff00) << 12);
 }
-# 114 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/sys/types.h" 2
+# 114 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/sys/types.h" 2
 
 
 typedef unsigned char u_char;
@@ -1199,15 +1199,15 @@ typedef uint32_t u_int32_t;
 typedef uint16_t u_int16_t;
 typedef uint8_t u_int8_t;
 typedef uint64_t u_int64_t;
-# 56 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/stdio.h" 2
-# 78 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/stdio.h"
+# 56 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/stdio.h" 2
+# 78 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/stdio.h"
 typedef off_t fpos_t;
-# 87 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/stdio.h"
+# 87 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/stdio.h"
 struct __sbuf {
  unsigned char *_base;
  int _size;
 };
-# 119 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/stdio.h"
+# 119 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/stdio.h"
 typedef struct __sFILE {
  unsigned char *_p;
  int _r;
@@ -1245,7 +1245,7 @@ typedef struct __sFILE {
 extern "C" {
 extern FILE __sF[];
 }
-# 223 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/stdio.h"
+# 223 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/stdio.h"
 extern "C" {
 void clearerr(FILE *);
 int fclose(FILE *);
@@ -1316,7 +1316,7 @@ int vsscanf(const char *, const char *, __va_list)
 
 
 }
-# 302 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/stdio.h"
+# 302 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/stdio.h"
 extern "C" {
 
 
@@ -1405,25 +1405,25 @@ static inline int __sputc(int _c, FILE *_p) {
  else
   return (__swbuf(_c, _p));
 }
-# 449 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/stdio.h"
+# 449 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/stdio.h"
 int fdprintf(int, const char*, ...);
 int vfdprintf(int, const char*, __va_list);
-# 23 "d:/marmalade/5.2/modules/iwutil/h/IwDebug.h" 2
-# 1 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/stdlib.h" 1
-# 37 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/stdlib.h"
-# 1 "C:\\android-ndk-r8\\toolchains\\arm-linux-androideabi-4.4.3\\prebuilt\\windows\\bin/../lib/gcc/arm-linux-androideabi/4.4.3/include/stddef.h" 1 3 4
-# 38 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/stdlib.h" 2
+# 23 "../../../modules/iwutil/h/IwDebug.h" 2
+# 1 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/stdlib.h" 1
+# 37 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/stdlib.h"
+# 1 "C:\\android-ndk-r7c\\toolchains\\arm-linux-androideabi-4.4.3\\prebuilt\\windows\\bin/../lib/gcc/arm-linux-androideabi/4.4.3/include/stddef.h" 1 3 4
+# 38 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/stdlib.h" 2
 
-# 1 "C:\\android-ndk-r8\\toolchains\\arm-linux-androideabi-4.4.3\\prebuilt\\windows\\bin/../lib/gcc/arm-linux-androideabi/4.4.3/include/stddef.h" 1 3 4
-# 40 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/stdlib.h" 2
-# 1 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/string.h" 1
-# 32 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/string.h"
-# 1 "C:\\android-ndk-r8\\toolchains\\arm-linux-androideabi-4.4.3\\prebuilt\\windows\\bin/../lib/gcc/arm-linux-androideabi/4.4.3/include/stddef.h" 1 3 4
-# 33 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/string.h" 2
-# 1 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/malloc.h" 1
-# 32 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/malloc.h"
-# 1 "C:\\android-ndk-r8\\toolchains\\arm-linux-androideabi-4.4.3\\prebuilt\\windows\\bin/../lib/gcc/arm-linux-androideabi/4.4.3/include/stddef.h" 1 3 4
-# 33 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/malloc.h" 2
+# 1 "C:\\android-ndk-r7c\\toolchains\\arm-linux-androideabi-4.4.3\\prebuilt\\windows\\bin/../lib/gcc/arm-linux-androideabi/4.4.3/include/stddef.h" 1 3 4
+# 40 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/stdlib.h" 2
+# 1 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/string.h" 1
+# 32 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/string.h"
+# 1 "C:\\android-ndk-r7c\\toolchains\\arm-linux-androideabi-4.4.3\\prebuilt\\windows\\bin/../lib/gcc/arm-linux-androideabi/4.4.3/include/stddef.h" 1 3 4
+# 33 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/string.h" 2
+# 1 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/malloc.h" 1
+# 32 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/malloc.h"
+# 1 "C:\\android-ndk-r7c\\toolchains\\arm-linux-androideabi-4.4.3\\prebuilt\\windows\\bin/../lib/gcc/arm-linux-androideabi/4.4.3/include/stddef.h" 1 3 4
+# 33 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/malloc.h" 2
 
 extern "C" {
 
@@ -1453,13 +1453,13 @@ struct mallinfo {
 };
 
 extern struct mallinfo mallinfo(void);
-# 78 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/malloc.h"
+# 78 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/malloc.h"
 extern size_t malloc_usable_size(void* block);
-# 99 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/malloc.h"
+# 99 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/malloc.h"
 extern void malloc_stats(void);
 
 }
-# 34 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/string.h" 2
+# 34 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/string.h" 2
 
 extern "C" {
 
@@ -1515,11 +1515,11 @@ extern int strcoll(const char *, const char *);
 extern size_t strxfrm(char *, const char *, size_t);
 
 }
-# 41 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/stdlib.h" 2
-# 1 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/alloca.h" 1
-# 42 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/stdlib.h" 2
-# 1 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/strings.h" 1
-# 45 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/strings.h"
+# 41 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/stdlib.h" 2
+# 1 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/alloca.h" 1
+# 42 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/stdlib.h" 2
+# 1 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/strings.h" 1
+# 45 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/strings.h"
 extern "C" {
 int bcmp(const void *, const void *, size_t);
 void bcopy(const void *, void *, size_t);
@@ -1530,9 +1530,9 @@ char *rindex(const char *, int);
 int strcasecmp(const char *, const char *);
 int strncasecmp(const char *, const char *, size_t);
 }
-# 43 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/stdlib.h" 2
-# 1 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/memory.h" 1
-# 44 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/stdlib.h" 2
+# 43 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/stdlib.h" 2
+# 1 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/memory.h" 1
+# 44 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/stdlib.h" 2
 
 extern "C" {
 
@@ -1664,28 +1664,28 @@ extern int mbtowc(wchar_t *, const char *, size_t);
 
 extern int wctomb(char *, wchar_t);
 extern size_t wcstombs(char *, const wchar_t *, size_t);
-# 183 "C:/android-ndk-r8/platforms/android-9/arch-arm/usr/include/stdlib.h"
+# 183 "../../../../../android-ndk-r7c/platforms/android-9/arch-arm/usr/include/stdlib.h"
 }
-# 24 "d:/marmalade/5.2/modules/iwutil/h/IwDebug.h" 2
-# 51 "d:/marmalade/5.2/modules/iwutil/h/IwDebug.h"
+# 24 "../../../modules/iwutil/h/IwDebug.h" 2
+# 51 "../../../modules/iwutil/h/IwDebug.h"
 typedef void(*IwAssertTextCallback)(char* pBuffer);
 
 extern "C" {
 
 typedef s3eErrorShowResult(*IwAssertCallback)(const char* channel, const char* pExpr, const char* pFilename, int32 line, const char* message);
 typedef s3eErrorShowResult(*IwErrorCallback)(const char* message);
-# 65 "d:/marmalade/5.2/modules/iwutil/h/IwDebug.h"
+# 65 "../../../modules/iwutil/h/IwDebug.h"
  s3eBool IwDebugTraceIsChannelOn(const char* channel, s3eBool default_on);
-# 74 "d:/marmalade/5.2/modules/iwutil/h/IwDebug.h"
+# 74 "../../../modules/iwutil/h/IwDebug.h"
 void IwDebugTraceDisable(s3eBool disable);
 
 
 
 
  void IwDebugTraceSetTraceChannel(const char* channel);
-# 91 "d:/marmalade/5.2/modules/iwutil/h/IwDebug.h"
+# 91 "../../../modules/iwutil/h/IwDebug.h"
  s3eBool IwDebugTraceChannelSwitch(const char* channel, s3eBool new_state);
-# 101 "d:/marmalade/5.2/modules/iwutil/h/IwDebug.h"
+# 101 "../../../modules/iwutil/h/IwDebug.h"
  void IwDebugTraceLinePrintf(const char* fmt, ...)
 
 __attribute__((format(printf, 1, 2)))
@@ -1717,13 +1717,13 @@ __attribute__((format(printf, 1, 2)))
 
 
  void IwDebugClearConfigCache();
-# 141 "d:/marmalade/5.2/modules/iwutil/h/IwDebug.h"
+# 141 "../../../modules/iwutil/h/IwDebug.h"
  void IwDebugAssertSetMessage(const char* fmt, ...)
 
 __attribute__((format(printf, 1, 2)))
 
 ;
-# 156 "d:/marmalade/5.2/modules/iwutil/h/IwDebug.h"
+# 156 "../../../modules/iwutil/h/IwDebug.h"
  void IwDebugAssertSetSolution(const char* fmt, ...)
 
 __attribute__((format(printf, 1, 2)))
@@ -1751,7 +1751,7 @@ __attribute__((format(printf, 1, 2)))
 
 
  IwAssertCallback IwAssertRegisterCallback(IwAssertCallback fn);
-# 192 "d:/marmalade/5.2/modules/iwutil/h/IwDebug.h"
+# 192 "../../../modules/iwutil/h/IwDebug.h"
  s3eErrorShowResult IwDebugErrorShow(const char* Args, ...)
 
 __attribute__((format(printf, 1, 2)))
@@ -1766,25 +1766,25 @@ __attribute__((format(printf, 1, 2)))
  IwErrorCallback IwDebugErrorRegisterCallback(IwErrorCallback fn);
 
 }
-# 353 "d:/marmalade/5.2/modules/iwutil/h/IwDebug.h"
+# 353 "../../../modules/iwutil/h/IwDebug.h"
     static inline void IwDebugExit()
     {
         abort();
     }
-# 14 "G:\\hungryhobo_source\\edk\\s3eandroidappirater\\source\\generic\\s3eAndroidAppirater_register.cpp" 2
+# 14 "C:\\marmalade\\6.0\\extensions\\s3eandroidappirater\\source\\generic\\s3eAndroidAppirater_register.cpp" 2
 # 1 "../source/h/s3eAndroidAppirater_autodefs.h" 1
-# 15 "G:\\hungryhobo_source\\edk\\s3eandroidappirater\\source\\generic\\s3eAndroidAppirater_register.cpp" 2
-# 1 "d:/marmalade/5.2/s3e/edk/h/s3eEdk.h" 1
-# 18 "d:/marmalade/5.2/s3e/edk/h/s3eEdk.h"
+# 15 "C:\\marmalade\\6.0\\extensions\\s3eandroidappirater\\source\\generic\\s3eAndroidAppirater_register.cpp" 2
+# 1 "../../../s3e/edk/h/s3eEdk.h" 1
+# 18 "../../../s3e/edk/h/s3eEdk.h"
 extern "C" {
-# 68 "d:/marmalade/5.2/s3e/edk/h/s3eEdk.h"
+# 68 "../../../s3e/edk/h/s3eEdk.h"
 typedef void (*s3eEdkCallbackCompleteFn)(uint32 extID, int32 notification, void* systemData, void* instance, int32 returnCode, void* completeData);
-# 80 "d:/marmalade/5.2/s3e/edk/h/s3eEdk.h"
+# 80 "../../../s3e/edk/h/s3eEdk.h"
 typedef int32 (*s3eEdkCallbackSpecific) (void* instance, void* systemData, void* userData);
-# 95 "d:/marmalade/5.2/s3e/edk/h/s3eEdk.h"
+# 95 "../../../s3e/edk/h/s3eEdk.h"
 enum s3eEdkCallback
 {
-# 105 "d:/marmalade/5.2/s3e/edk/h/s3eEdk.h"
+# 105 "../../../s3e/edk/h/s3eEdk.h"
     S3E_EDK_IPHONE_OSROTATION = 100,
 
 
@@ -1810,9 +1810,9 @@ enum s3eEdkCallback
 
 
     S3E_EDK_IPHONE_APPLICATIONWILLENTERFOREGROUND,
-# 141 "d:/marmalade/5.2/s3e/edk/h/s3eEdk.h"
+# 141 "../../../s3e/edk/h/s3eEdk.h"
     S3E_EDK_IPHONE_DID_RECEIVE_LOCAL_NOTIFICATION,
-# 153 "d:/marmalade/5.2/s3e/edk/h/s3eEdk.h"
+# 153 "../../../s3e/edk/h/s3eEdk.h"
     S3E_EDK_IPHONE_DID_RECEIVE_REMOTE_NOTIFICATION,
 
 
@@ -1823,7 +1823,7 @@ enum s3eEdkCallback
 
     S3E_EDK_CALLBACK_MAX
 };
-# 213 "d:/marmalade/5.2/s3e/edk/h/s3eEdk.h"
+# 213 "../../../s3e/edk/h/s3eEdk.h"
 extern "C" s3eResult s3eEdkCallbacksEnqueue(uint32 extID,
                                  int notification,
                                  void* systemData =__null,
@@ -1832,14 +1832,14 @@ extern "C" s3eResult s3eEdkCallbacksEnqueue(uint32 extID,
                                  s3eBool oneShot =(0),
                                  s3eEdkCallbackCompleteFn =__null,
                                  void* completeData =__null);
-# 287 "d:/marmalade/5.2/s3e/edk/h/s3eEdk.h"
+# 287 "../../../s3e/edk/h/s3eEdk.h"
 extern "C" s3eResult s3eEdkCallbacksRegister(uint32 extID,
                                   int maxNotification,
                                   int notification,
                                   s3eCallback callback,
                                   void* userData,
                                   s3eBool requireUnique);
-# 341 "d:/marmalade/5.2/s3e/edk/h/s3eEdk.h"
+# 341 "../../../s3e/edk/h/s3eEdk.h"
 extern "C" s3eResult s3eEdkCallbacksRegisterSpecific(uint32 extID,
                                           int maxNotification,
                                           int notification,
@@ -1847,28 +1847,28 @@ extern "C" s3eResult s3eEdkCallbacksRegisterSpecific(uint32 extID,
                                           void* userData,
                                           s3eBool requireUnique,
                                           void* instance);
-# 400 "d:/marmalade/5.2/s3e/edk/h/s3eEdk.h"
+# 400 "../../../s3e/edk/h/s3eEdk.h"
 extern "C" s3eResult s3eEdkCallbacksRegisterInternal(uint32 extID,
                                                      int32 maxNotification,
                                                      int notification,
                                                      s3eCallback callback,
                                                      void* userData,
                                                      s3eBool requireUnique);
-# 429 "d:/marmalade/5.2/s3e/edk/h/s3eEdk.h"
+# 429 "../../../s3e/edk/h/s3eEdk.h"
 extern "C" s3eResult s3eEdkCallbacksUnRegister(uint32 extID,
                                     int maxNotification,
                                     int notification,
                                     s3eCallback callback,
                                     void* instance =__null);
-# 449 "d:/marmalade/5.2/s3e/edk/h/s3eEdk.h"
+# 449 "../../../s3e/edk/h/s3eEdk.h"
 extern "C" void s3eEdkCallbacksUnRegisterDevice(uint32 extID, void* instance =__null);
-# 463 "d:/marmalade/5.2/s3e/edk/h/s3eEdk.h"
+# 463 "../../../s3e/edk/h/s3eEdk.h"
 extern "C" s3eBool s3eEdkCallbacksIsRegistered(uint32 extID, int32 notification, void* instance =__null);
-# 506 "d:/marmalade/5.2/s3e/edk/h/s3eEdk.h"
+# 506 "../../../s3e/edk/h/s3eEdk.h"
 void s3eEdkSurfaceSetSize(s3eBool synchronous =(0), int width =0, int height =0, int pitch =0);
-# 525 "d:/marmalade/5.2/s3e/edk/h/s3eEdk.h"
+# 525 "../../../s3e/edk/h/s3eEdk.h"
 extern "C" void* s3eEdkMallocOS(int size, s3eBool bMsgOnFail =1);
-# 537 "d:/marmalade/5.2/s3e/edk/h/s3eEdk.h"
+# 537 "../../../s3e/edk/h/s3eEdk.h"
 extern "C" void* s3eEdkReallocOS(void* item, int size, s3eBool bMsgOnFail =1);
 
 
@@ -1877,19 +1877,19 @@ extern "C" void* s3eEdkReallocOS(void* item, int size, s3eBool bMsgOnFail =1);
 
 
 extern "C" void s3eEdkFreeOS(void* item);
-# 562 "d:/marmalade/5.2/s3e/edk/h/s3eEdk.h"
+# 562 "../../../s3e/edk/h/s3eEdk.h"
 extern "C" s3eBool s3eEdkIsInitialised(uint32 extID);
-# 574 "d:/marmalade/5.2/s3e/edk/h/s3eEdk.h"
+# 574 "../../../s3e/edk/h/s3eEdk.h"
 typedef void s3eEdkDLLHandle;
-# 587 "d:/marmalade/5.2/s3e/edk/h/s3eEdk.h"
+# 587 "../../../s3e/edk/h/s3eEdk.h"
 extern "C" s3eEdkDLLHandle* s3eEdkLibraryOpen(const char* name);
-# 607 "d:/marmalade/5.2/s3e/edk/h/s3eEdk.h"
+# 607 "../../../s3e/edk/h/s3eEdk.h"
 extern "C" void* s3eEdkLibraryGetSymbol(s3eEdkDLLHandle* handle, const char* name);
-# 619 "d:/marmalade/5.2/s3e/edk/h/s3eEdk.h"
+# 619 "../../../s3e/edk/h/s3eEdk.h"
 extern "C" s3eResult s3eEdkLibraryClose(s3eEdkDLLHandle* handle);
-# 628 "d:/marmalade/5.2/s3e/edk/h/s3eEdk.h"
+# 628 "../../../s3e/edk/h/s3eEdk.h"
 extern "C" const char* s3eEdkLibraryError();
-# 643 "d:/marmalade/5.2/s3e/edk/h/s3eEdk.h"
+# 643 "../../../s3e/edk/h/s3eEdk.h"
 typedef void* (*s3eEdkThreadFunc)();
 
 
@@ -1899,7 +1899,7 @@ typedef void* (*s3eEdkThreadFunc)();
 
 
 typedef void (*s3eEdkThreadVoidFunc)();
-# 664 "d:/marmalade/5.2/s3e/edk/h/s3eEdk.h"
+# 664 "../../../s3e/edk/h/s3eEdk.h"
 void* s3eEdkThreadRunOnOS(s3eEdkThreadFunc fn, int n_args, ...);
 
 
@@ -1907,17 +1907,17 @@ void* s3eEdkThreadRunOnOS(s3eEdkThreadFunc fn, int n_args, ...);
 
 
 extern "C" void* s3eEdkThreadRunOnOSV(s3eEdkThreadFunc fn, int n_args, va_list args);
-# 683 "d:/marmalade/5.2/s3e/edk/h/s3eEdk.h"
+# 683 "../../../s3e/edk/h/s3eEdk.h"
 void s3eEdkThreadRunOnOSAsync(s3eEdkThreadVoidFunc fn, int n_args, ...);
 
 extern "C" void s3eEdkThreadRunOnOSAsyncV(s3eEdkThreadVoidFunc fn, int n_args, va_list args);
-# 698 "d:/marmalade/5.2/s3e/edk/h/s3eEdk.h"
+# 698 "../../../s3e/edk/h/s3eEdk.h"
 extern "C" void s3eEdkThreadSetSuspended();
-# 709 "d:/marmalade/5.2/s3e/edk/h/s3eEdk.h"
+# 709 "../../../s3e/edk/h/s3eEdk.h"
 extern "C" void s3eEdkThreadSetResumed();
-# 718 "d:/marmalade/5.2/s3e/edk/h/s3eEdk.h"
+# 718 "../../../s3e/edk/h/s3eEdk.h"
 extern "C" s3eResult s3eEdkThreadSleep(uint32 ms);
-# 748 "d:/marmalade/5.2/s3e/edk/h/s3eEdk.h"
+# 748 "../../../s3e/edk/h/s3eEdk.h"
 extern "C" void* s3eEdkGlobalsGet(uint32 extID);
 
 
@@ -1936,7 +1936,7 @@ extern "C" void s3eEdkRegister(const char* name,
                     s3eEdkInitFn init,
                     s3eEdkTermFn term,
                     int globalDataSize);
-# 782 "d:/marmalade/5.2/s3e/edk/h/s3eEdk.h"
+# 782 "../../../s3e/edk/h/s3eEdk.h"
 typedef enum s3eEdkErrorPriority
 {
 
@@ -1958,17 +1958,17 @@ typedef enum s3eEdkErrorPriority
     S3E_EXT_ERROR_PRI_MAJOR = 2,
     S3E_EXT_ERROR_PRI_MAX = 3
 } s3eEdkErrorPriority;
-# 816 "d:/marmalade/5.2/s3e/edk/h/s3eEdk.h"
+# 816 "../../../s3e/edk/h/s3eEdk.h"
 extern "C" const char* s3eEdkErrorGetString(uint32 extID);
-# 831 "d:/marmalade/5.2/s3e/edk/h/s3eEdk.h"
+# 831 "../../../s3e/edk/h/s3eEdk.h"
 extern "C" int s3eEdkErrorGet(uint32 extID);
-# 847 "d:/marmalade/5.2/s3e/edk/h/s3eEdk.h"
+# 847 "../../../s3e/edk/h/s3eEdk.h"
 extern "C" s3eResult s3eEdkErrorSet(uint32 extID, int32 error, s3eEdkErrorPriority priority);
-# 856 "d:/marmalade/5.2/s3e/edk/h/s3eEdk.h"
+# 856 "../../../s3e/edk/h/s3eEdk.h"
 void s3eEdkErrorSetString(const char* fmt, ...);
 
 extern "C" void s3eEdkErrorSetStringV(const char* fmt, va_list args);
-# 878 "d:/marmalade/5.2/s3e/edk/h/s3eEdk.h"
+# 878 "../../../s3e/edk/h/s3eEdk.h"
 extern "C" int s3eEdkGetAppVersionMajor();
 
 
@@ -1976,9 +1976,9 @@ extern "C" int s3eEdkGetAppVersionMajor();
 
 
 extern "C" int s3eEdkGetAppVersionMinor();
-# 903 "d:/marmalade/5.2/s3e/edk/h/s3eEdk.h"
+# 903 "../../../s3e/edk/h/s3eEdk.h"
 }
-# 16 "G:\\hungryhobo_source\\edk\\s3eandroidappirater\\source\\generic\\s3eAndroidAppirater_register.cpp" 2
+# 16 "C:\\marmalade\\6.0\\extensions\\s3eandroidappirater\\source\\generic\\s3eAndroidAppirater_register.cpp" 2
 # 1 "../h/s3eAndroidAppirater.h" 1
 # 21 "../h/s3eAndroidAppirater.h"
 extern "C" {
@@ -1989,10 +1989,12 @@ extern "C" {
 
 s3eBool s3eAndroidAppiraterAvailable();
 
-s3eResult AppiraterInit(const char* cTitle, const char* cMsg,int iDays,int iLaunches);
+s3eResult AppiraterInit(const char* cTitle, const char* cAppName,int iDays,int iLaunches,int iEvents);
+
+s3eResult AppiraterEventOccured();
 
 }
-# 17 "G:\\hungryhobo_source\\edk\\s3eandroidappirater\\source\\generic\\s3eAndroidAppirater_register.cpp" 2
+# 17 "C:\\marmalade\\6.0\\extensions\\s3eandroidappirater\\source\\generic\\s3eAndroidAppirater_register.cpp" 2
 
 extern s3eResult s3eAndroidAppiraterInit();
 extern void s3eAndroidAppiraterTerminate();
@@ -2003,11 +2005,18 @@ extern void s3eAndroidAppiraterTerminate();
 
 
 
-static s3eResult AppiraterInit_wrap(const char* cTitle, const char* cMsg, int iDays, int iLaunches)
+static s3eResult AppiraterInit_wrap(const char* cTitle, const char* cAppName, int iDays, int iLaunches, int iEvents)
 {
     do { if (IwDebugTraceIsChannelOn("ANDROIDAPPIRATER_VERBOSE", 1)) { IwDebugTraceSetTraceChannel("ANDROIDAPPIRATER_VERBOSE"); IwDebugTraceLinePrintf ("calling s3eAndroidAppirater func on main thread: AppiraterInit"); } } while(0);
-    return (s3eResult)(intptr_t)s3eEdkThreadRunOnOS((s3eEdkThreadFunc)AppiraterInit, 4, cTitle, cMsg, iDays, iLaunches);
+    return (s3eResult)(intptr_t)s3eEdkThreadRunOnOS((s3eEdkThreadFunc)AppiraterInit, 5, cTitle, cAppName, iDays, iLaunches, iEvents);
 }
+
+static s3eResult AppiraterEventOccured_wrap()
+{
+    do { if (IwDebugTraceIsChannelOn("ANDROIDAPPIRATER_VERBOSE", 1)) { IwDebugTraceSetTraceChannel("ANDROIDAPPIRATER_VERBOSE"); IwDebugTraceLinePrintf ("calling s3eAndroidAppirater func on main thread: AppiraterEventOccured"); } } while(0);
+    return (s3eResult)(intptr_t)s3eEdkThreadRunOnOS((s3eEdkThreadFunc)AppiraterEventOccured, 0);
+}
+
 
 
 
@@ -2016,20 +2025,21 @@ static s3eResult AppiraterInit_wrap(const char* cTitle, const char* cMsg, int iD
 void s3eAndroidAppiraterRegisterExt()
 {
 
-    void* funcPtrs[1];
+    void* funcPtrs[2];
     funcPtrs[0] = (void*)AppiraterInit_wrap;
+    funcPtrs[1] = (void*)AppiraterEventOccured_wrap;
 
 
 
 
-    int flags[1] = { 0 };
+    int flags[2] = { 0 };
 
 
 
 
     s3eEdkRegister("s3eAndroidAppirater", funcPtrs, sizeof(funcPtrs), flags, s3eAndroidAppiraterInit, s3eAndroidAppiraterTerminate, 0);
 }
-# 70 "G:\\hungryhobo_source\\edk\\s3eandroidappirater\\source\\generic\\s3eAndroidAppirater_register.cpp"
+# 78 "C:\\marmalade\\6.0\\extensions\\s3eandroidappirater\\source\\generic\\s3eAndroidAppirater_register.cpp"
 extern "C" __attribute__ ((visibility("default"))) void RegisterExt()
 {
     s3eAndroidAppiraterRegisterExt();
